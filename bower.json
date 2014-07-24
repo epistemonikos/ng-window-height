@@ -1,9 +1,9 @@
 {
-  "name": "bower-window-height",
+  "name": "angular-window-height",
   "version": "0.0.1",
   "authors": [
     "Aldo Canepa <waldoc@gmail.com>",
-    "Felipe Valverde <felipe.valverde.campos@gmail.com>",
+    "Felipe Valverde <felipe.valverde.campos@gmail.com>"
   ],
   "description": "Angular window size fit directive",
   "main": "angular-window-height.js",
@@ -14,5 +14,5 @@
     "adapt"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/epistemonikos/bower-jvectormap/blob/master/bower.json"
+  "homepage": "https://github.com/epistemonikos/ng-window-height"
 }
