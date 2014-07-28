@@ -8,7 +8,7 @@ angular.module("window-height", [])
         link: function (scope, element, attrs) {
             scope.footer_elem = angular.element(scope.footer || '#footer');
             element.css('overflow-x', 'hidden');
-            element.css('overflow-y', 'scroll');
+            element.css('overflow-y', 'auto');
             var _window = angular.element($window);
             var _bottom_offset = isNaN(scope.bottom_offset) ? 0 : parseInt(scope.bottom_offset);
 
