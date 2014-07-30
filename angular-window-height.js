@@ -24,9 +24,8 @@ angular.module("ngWindowHeight", [])
             scope.setHeight();
 
             /* keep size when resize window */
-            _window.bind('resize', function () {
-                scope.setHeight();
-            });
+            _window.bind('resize', scope.setHeight);
+            angular.element('body').on('OverflowEvent' in window ? 'overflowchanged' : 'overflow', scope.setHeight);
         }
     };
 });
