@@ -1,4 +1,4 @@
-angular.module("window-height", [])
+angular.module("ngWindowHeight", [])
 .directive('windowHeight', function ($window) {
     return {
         scope: {
