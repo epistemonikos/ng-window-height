@@ -13,10 +13,15 @@ angular.module("ngWindowHeight", [])
 
             scope.setHeight = function () {
                 var new_height = angular.element($window).height();
-                new_height -= scope.footer_elem.outerHeight(true); // footer outer height
-                new_height -= element.offset().top; // element top px
-                new_height -= _bottom_offset; // extra bottom offset
-                element.height(new_height+'px');
+                if (new_height > 568) {
+                    new_height -= scope.footer_elem.outerHeight(true); // footer outer height
+                    new_height -= element.offset().top; // element top px
+                    new_height -= _bottom_offset; // extra bottom offset
+                    element.height(new_height+'px');
+                }
+                else {
+                    element.height('auto');
+                }
             };
 
             /* first height before bind rezise ! */
