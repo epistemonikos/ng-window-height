@@ -40,6 +40,11 @@ angular.module("ngWindowHeight", [])
             element.bind('mouseenter', function () {
                 scope.$root.$broadcast('MOUSEENTER');
             });
+
+            scope.$watch('bottom_offset', function () {
+                _bottom_offset = isNaN(scope.bottom_offset) || !scope.bottom_offset ? 0 : parseInt(scope.bottom_offset);
+                scope.setHeight();
+            });
         }
     };
 });
